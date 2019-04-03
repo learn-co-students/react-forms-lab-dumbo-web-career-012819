@@ -4,8 +4,9 @@ import TwitterMessage from "./components/TwitterMessage";
 
 class App extends Component {
 
-  login = ({ username, password }) => {
-    console.log(`Logging in ${username} with password ${password}`);
+  login = (event) => {
+    event.preventDefault()
+    console.log('ive been called')
   };
 
   render() {
